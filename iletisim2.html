@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İletişim</title>
+    <style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    input[type=number], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        background-color: #0b032e;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit]:hover {
+        background-color: black
+    }
+    
+        input[type=reset] {
+        width: 100%;
+        background-color: #0b032e;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        }        
+        input[type=reset]:hover {
+        background-color: black
+    }
+        
+    </style>
+</head>
+<body>
+    <div style="text-align:center"><h1>İLETİŞİM SAYFASI</h1> </div>
+    <div style="text-align:center"><p>Lütfen bilgilerinizi eksiksiz bir şekilde giriniz.</p> </div>
+<script>
+    function validateForm() {
+        var x = document.forms["myForm"]["isim"].value;
+        if(x==""){
+            alert("Lütfen isminizi yazınız.");
+            return false;
+        }
+        var a = document.forms["myForm"]["soyisim"].value;
+        if(a==""){
+            alert("Lütfen soy isminizi yazınız.");
+            return false;
+        }
+        var b = document.forms["myForm"]["email"].value;
+        if(b==""){
+            alert("Lütfen E-mail adresinizi yazınız.");
+            return false;
+        }
+        var c = document.forms["myForm"]["yas"].value;
+        if(c==""){
+            alert("Lütfen yaşınızı giriniz.");
+            return false;
+        }
+    }
+</script>
+
+
+<form name="myForm" onsubmit="return validateForm()" action="welcome_get1.php" method="get" >
+    İsim: <input type="text" name="isim">
+    Soy isim: <input type="text" name="soyisim">
+    E-mail: <input type="email" name="email">
+    Yaş: <input type="number" name="yas">
+
+    <input type="submit" value="Tamam" name="gonder">
+    <input type="reset" value="Sıfırla">
+</form>
+
+<footer>
+    <a href="index.html">Anasayfaya dönmek için tıklayın.</a>
+</footer>
+
+</body>
+</html>
