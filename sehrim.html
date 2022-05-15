@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Memleketim</title>
+        <style>
+            img{
+                width: 1000px;
+              height: 600px;  
+            }
+            body{
+                background-color: black;
+            }
+          .slider1{
+              position: relative;
+              width: 1000px;
+              height: 600px;
+              border: 5px solid white;
+              margin: 50px auto;
+              overflow: hidden;
+          }
+          .slider2 ul {
+list-style: none;
+padding: 0px;
+margin: 0px;
+
+          }
+          .slider1 ul li{
+              position: absolute;
+          }
+          .slider1 ul li:nth-of-type(1){
+              left: 0px;   
+          }
+          .slider1 ul li:nth-of-type(2){
+              left: 1000px;   
+          }
+          .slider1 ul li:nth-of-type(3){
+              left: 2000px;   
+          }
+          .slider1 ul li:nth-of-type(4){
+              left: 3000px;   
+          }
+          .slider2{
+              position: absolute;
+              left: 0px;
+              animation-name: slayt;
+              animation-duration: 10s;
+              animation-delay:0.5s;
+              animation-direction: alternate;
+              animation-iteration-count: infinite;
+          }
+          .slider2:hover{
+animation-play-state: paused;
+          }
+          @keyframes slayt{
+              0%{left:0px;}
+              33%{left:-1000px;}
+              66%{left:-2000px;}
+              100%{left:-3000px;}
+          }
+         .baslik{
+             color:white;
+             font-size: 400%;
+    text-align: center;
+         }
+         .aciklama{
+             color:white;
+         }
+        </style>
+    </head>
+<body>
+    <p class="baslik">İSTANBUL/BEŞİKTAŞ</p>
+    <div class="slider1">
+        <div class="slider2">
+            <ul>
+                <li>
+                    <a href="#besiktas">
+                        <img 
+            src="https://www.manzara.gen.tr/w1/be%C5%9Fikta%C5%9F-manzaralar%C4%B1.jpg"
+            alt="Beşiktaş ilçesi."
+            width: 700px;
+              height: 600px;
+            />
+                    </a>
+                </li>
+                <li>
+                    <a href="#vodafone">
+                        <img 
+                        src="https://storage.kucukoteller.com.tr/2020/04/03/1585899572870727.jpg"
+                        alt="Vodafone Arena."
+                        width: 1000px;
+              height: 600px;
+            />
+                    </a>
+                </li>
+                <li>
+                    <a href="#dolmabahce">
+                        <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Dolmabah%C3%A7e_Palace.JPG"
+                        alt="Dolmabahçe Sarayı."
+                        width: 1000px;
+              height: 600px;
+            />
+                    </a>
+                </li>
+                <li>
+                    <a href="#bebek">
+                        <img 
+                        src="https://yummyistanbul.com/wp-content/uploads/2022/01/bebek-istanbul.jpg"
+                        alt="Beşiktaş/Bebek."
+                        width: 1000px;
+              height: 600px;
+            />
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    <h1 class="aciklama" id="besiktas">Beşiktaş İlçesi</h1>
+    <p class="aciklama">Beşiktaş, İstanbul'un bir ilçesidir. Adını İstanbul'un en eski semtlerinden bir olan Beşiktaş semtinden alır.<br> 8,4 km uzunluğunda sahili olduğu İstanbul Boğazı’nın Rumeli yakasında yer alan ilçe batıda Şişli ve Kâğıthane, güneybatıda Beyoğlu, kuzeyde Sarıyer ilçeleriyle komşudur.<br> Yüzölçümü 18 km², nüfusu ise 2019 ADNKS verilerine göre 182.649'dur.</p>
+<br><br>
+<h1 class="aciklama" id="vodafone">Vodafone Arena</h1>
+<p class="aciklama">Vodafone Park, ya da BJK İnönü Spor Kompleksi Vodafone Park İstanbul'un Beşiktaş ilçesinde bulunan 42.590 izleyici kapasiteli çok amaçlı bir stadyumdur.<br> Ev sahibi ve Türkiye'nin en iyi takımı olan Beşiktaş futbol takımının eski stadyumu BJK İnönü Stadyumu yıkılarak aynı arazi üzerine inşa edilmiştir.</p>
+<br><br>
+<h1 class="aciklama" id="dolmabahce">Dolmabahçe Sarayı</h1>
+<p class="aciklama">Dolmabahçe Sarayı, İstanbul, Beşiktaş'ta, Kabataş'tan Beşiktaş'a uzanan Dolmabahçe Caddesi'yle İstanbul Boğazı arasında, 250.000 m²lik bir alan üzerinde bulunan bir Osmanlı sarayıdır.<br> Marmara Denizi'nden Boğaziçi'ne deniz yoluyla girişte sol kıyıda, Üsküdar ve Kuzguncuk'ın karşısında yer alır.<br> Sultan Abdülmecid tarafından inşa ettirilen sarayın yapımı 1843 yılında başlayıp 1856 yılında bitirilmiştir. Günümüzde müze olarak kullanılmaktadır.</p>
+<br><br>
+<h1 class="aciklama" id="bebek">Beşiktaş/Bebek</h1>
+<p class="aciklama">Bebek, İstanbul'un Beşiktaş ilçesinde, Boğaziçi'nin Avrupa yakasında olan bir semttir.<br> Rumeli Hisarı ile Arnavutköy arasında yer alan ve genelde yüksek gelirlilerin oturduğu bir semttir, aynı adı taşıyan bir deniz koyuna da sahiptir.</p>
+<br><br><br>
+<footer>
+    <a href="hakkinda.html">Anasayfaya dönmek için tıklayın.</a>
+</footer>
+
+
+</body>
+</html>
